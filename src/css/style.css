@@ -1,0 +1,113 @@
+main {
+    background-image: url(../images/bg-repeat.jpg);
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    color: #fff;
+    width: 50%;
+}
+
+.text h2 {
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 23.44px;
+    margin-bottom: 11px;
+}
+
+.text p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 17.58px;
+}
+
+form {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 34rem;
+    padding: 2rem;
+}
+
+form .informations {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 7px;
+}
+
+form .informations .input-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 0.1rem;
+}
+
+form .informations .question-form {
+    border-radius: 0.5rem;
+    padding: 0.9rem;
+    border: 1px solid #000;
+    transition: 0.2s;
+}
+
+form .informations textarea {
+    height: 100px;
+}
+
+form .informations .question-form::placeholder {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #A8A8A8;
+}
+
+form .informations .span {
+    opacity: 0;
+    color: #F52E2E;
+    transition: 0.2s;
+}
+
+form p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+form .button {
+    border: none;
+    background-color: #3CCC87;
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+form .button:hover{
+    background-color: #db8701;
+}
+
+form .button:active{
+    background-color: #000000;
+}
+
+form .informations .input-container .incomplete-field {
+    border: 1px solid #F52E2E;
+}
+
+form .informations .filled-field {
+    border: 1px solid #00C22B;
+}
+
+form .informations .error {
+    opacity: 1;
+}
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest-html+css+js+intermediary</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <script type="text/javascript" src="src/js/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="text">
+                <h2>FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!</h2>
+
+                <p>
+                    caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos
+                    de
+                    24h.
+                </p>
+            </div>
+
+            <form>
+                <div class="informations">
+                    <div class="input-container">
+                        <input class="question-form 0" type="text" name="name" id="name" placeholder="Nome completo *"
+                            oninput="addFilledField(this)">
+
+                        <span class="span">campo obrigatório</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input class="question-form 1" type="email" name="email" id="email" placeholder="Email *"
+                            oninput="addFilledField(this)">
+
+                        <span class="span">campo obrigatório</span>
+
+                    </div>
+
+                    <div class="input-container">
+                        <input class="question-form 2" type="tel" name="phone-number" id="phone-number"
+                            placeholder="Telefone *" oninput="addFilledField(this)">
+
+                        <span class="span">campo obrigatório</span>
+                    </div>
+
+                    <div class="input-container">
+                        <textarea class="question-form 3" name="message" id="message" cols="30" rows="10"
+                            placeholder="Mensagem *" oninput="addFilledField(this)"></textarea>
+
+                        <span class="span">campo obrigatório</span>
+                    </div>
+                </div>
+
+                <p>*campos obrigatórios</p>
+
+                <button class="button">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
